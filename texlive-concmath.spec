@@ -1,5 +1,11 @@
+# revision 17219
+# category Package
+# catalog-ctan /macros/latex/contrib/concmath
+# catalog-date 2010-02-24 21:28:09 +0100
+# catalog-license lppl
+# catalog-version 1999/03/18
 Name:		texlive-concmath
-Version:	19990318
+Version:	1999/03/18
 Release:	1
 Summary:	Concrete Math fonts
 Group:		Publishing
@@ -55,6 +61,7 @@ fonts.
 %doc %{_texmfdistdir}/source/latex/concmath/Makefile
 %doc %{_texmfdistdir}/source/latex/concmath/concmath.dtx
 %doc %{_texmfdistdir}/source/latex/concmath/concmath.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -65,3 +72,5 @@ fonts.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
