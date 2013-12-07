@@ -6,7 +6,7 @@
 # catalog-version 1999/03/18
 Name:		texlive-concmath
 Version:	19990318
-Release:	4
+Release:	5
 Summary:	Concrete Math fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/concmath
