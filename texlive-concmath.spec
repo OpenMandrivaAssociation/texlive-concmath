@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version 1999/03/18
 Name:		texlive-concmath
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Concrete Math fonts
 Group:		Publishing
