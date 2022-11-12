@@ -1,19 +1,13 @@
-# revision 17219
-# category Package
-# catalog-ctan /macros/latex/contrib/concmath
-# catalog-date 2010-02-24 21:28:09 +0100
-# catalog-license lppl
-# catalog-version 1999/03/18
 Name:		texlive-concmath
-Version:	20190228
+Version:	17219
 Release:	1
 Summary:	Concrete Math fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/concmath
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/concmath.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/concmath.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/concmath.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/concmath.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/concmath.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/concmath.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ Modern math fonts using parameters from Concrete Roman text
 fonts.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -54,25 +48,11 @@ fonts.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 19990318-2
-+ Revision: 750419
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 19990318-1
-+ Revision: 720276
-- texlive-concmath
-- texlive-concmath
-- texlive-concmath
-- texlive-concmath
-- texlive-concmath
-
