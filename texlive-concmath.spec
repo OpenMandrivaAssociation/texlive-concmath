@@ -1,6 +1,6 @@
 Name:		texlive-concmath
 Version:	17219
-Release:	1
+Release:	2
 Summary:	Concrete Math fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/concmath
