@@ -3,7 +3,7 @@ Version:	17219
 Release:	2
 Summary:	Concrete Math fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/concmath
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/concmath
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/concmath.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/concmath.doc.r%{version}.tar.xz
